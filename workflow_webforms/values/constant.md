@@ -1,0 +1,6 @@
+---
+description: Value.
+---
+
+# Константа
+
