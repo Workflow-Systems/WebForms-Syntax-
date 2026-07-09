@@ -54,7 +54,7 @@ description: Событийное условие; срабатывает при 
 
 Необязательный тэг. Значение тэга `<Key>`: не ожидается.
 
-Если тэг `<Key>` отсутствует, то наличие тэгов [`<Key1>`](keydowncondition.md#key1) и/или [`<Key2>`](keydowncondition.md#key2) обязательно.
+Если тэг `<Key>` отсутствует, то наличие тэгов [`<Key1>`](key_down_condition.md#key1) и/или [`<Key2>`](key_down_condition.md#key2) обязательно.
 
 ```xml
 <Key Control="False" Shift="False" Alt="False" Value="Enter" />
@@ -66,7 +66,7 @@ description: Событийное условие; срабатывает при 
 
 ### ControlKey <a href="#control_key" id="control_key"></a>
 
-Признак, определяющий, будет ли проверяться нажатие клавиши Control при нажатии на клавиши, указанные в тэгах [`<Key1>`](keydowncondition.md#key1) и [`<Key2>`](keydowncondition.md#key2).
+Признак, определяющий, будет ли проверяться нажатие клавиши Control при нажатии на клавиши, указанные в тэгах [`<Key1>`](key_down_condition.md#key1) и [`<Key2>`](key_down_condition.md#key2).
 
 Необязательный тэг. Ожидается логическое значение.
 
@@ -78,7 +78,7 @@ description: Событийное условие; срабатывает при 
 
 ### ShiftKey <a href="#shift_key" id="shift_key"></a>
 
-Признак, определяющий, будет ли проверяться нажатие клавиши Shift при нажатии на клавиши, указанные в тэгах [`<Key1>`](keydowncondition.md#key1) и [`<Key2>`](keydowncondition.md#key2).
+Признак, определяющий, будет ли проверяться нажатие клавиши Shift при нажатии на клавиши, указанные в тэгах [`<Key1>`](key_down_condition.md#key1) и [`<Key2>`](key_down_condition.md#key2).
 
 Необязательный тэг. Ожидается логическое значение.
 
@@ -90,7 +90,7 @@ description: Событийное условие; срабатывает при 
 
 ### AltKey <a href="#alt_key" id="alt_key"></a>
 
-Признак, определяющий, будет ли проверяться нажатие клавиши Alt при нажатии на клавиши, указанные в тэгах [`<Key1>`](keydowncondition.md#key1) и [`<Key2>`](keydowncondition.md#key2).
+Признак, определяющий, будет ли проверяться нажатие клавиши Alt при нажатии на клавиши, указанные в тэгах [`<Key1>`](key_down_condition.md#key1) и [`<Key2>`](key_down_condition.md#key2).
 
 Необязательный тэг. Ожидается логическое значение.
 
@@ -102,12 +102,12 @@ description: Событийное условие; срабатывает при 
 
 ### Key1 <a href="#key1" id="key1"></a>
 
-Первая нажатая клавиша (работает в сочетании с нажатием клавиши, указанной в тэге [`<Key2>`](keydowncondition.md#key2)).
+Первая нажатая клавиша (работает в сочетании с нажатием клавиши, указанной в тэге [`<Key2>`](key_down_condition.md#key2)).
 
 Необязательный тэг. Ожидается один из кодов нажатой клавиши.\
 Список возможных значений кодов клавиш доступен по [ссылке](https://developer.mozilla.org/en-US/docs/Web/API/UI_Events/Keyboard_event_code_values).
 
-Если тэг `<Key1>` отсутствует, то наличие тэгов [`<Key>`](keydowncondition.md#key) или [`<Key2>`](keydowncondition.md#key2) обязательно.
+Если тэг `<Key1>` отсутствует, то наличие тэгов [`<Key>`](key_down_condition.md#key) или [`<Key2>`](key_down_condition.md#key2) обязательно.
 
 ```xml
 <Key1>Enter</Key1>
@@ -115,7 +115,7 @@ description: Событийное условие; срабатывает при 
 
 ### Key2 <a href="#key2" id="key2"></a>
 
-Вторая нажатая клавиша (работает в сочетании с нажатием клавиши, указанной в тэге [`<Key1>`](keydowncondition.md#key1)).
+Вторая нажатая клавиша (работает в сочетании с нажатием клавиши, указанной в тэге [`<Key1>`](key_down_condition.md#key1)).
 
 Необязательный тэг. Ожидается один из кодов нажатой клавиши.\
 Список возможных значений кодов клавиш доступен по [ссылке](https://developer.mozilla.org/en-US/docs/Web/API/UI_Events/Keyboard_event_code_values).

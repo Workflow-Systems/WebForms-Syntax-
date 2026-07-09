@@ -8,7 +8,7 @@ description: Описание структуры xml-файла формы, ос
 
 ```xml
 <?xml version="1.0"?>
-<Form Name="" Title="" FontStyle="" ForeColor="" StartPage="">
+<Form Name="" Title="" Height="" Width="" FontStyle="" ForeColor="" StartPage="">
   <!--Тэги, специфичные для Form-->
   <Appearance></Appearance>
   <Parameters></Parameters>
@@ -25,7 +25,7 @@ description: Описание структуры xml-файла формы, ос
 
 ```xml
 <?xml version="1.0"?>
-<Form Name="" Title="" FontStyle="" ForeColor="" BackColor="" ValidationType=""
+<Form Name="" Title="" Height="" Width="" FontStyle="" ForeColor="" BackColor="" ValidationType=""
       StartPage="" MinWidth="" MaxWidth=""
       IssueAddButton="" IssueListButton="">
   <!--Тэги, специфичные для Form-->
@@ -47,6 +47,8 @@ description: Описание структуры xml-файла формы, ос
 ```xml
 <Form Name=""
       Title=""
+      Height=""
+      Width=""
       FontStyle=""
       ForeColor=""
       BackColor=""
@@ -73,6 +75,22 @@ description: Описание структуры xml-файла формы, ос
 Заголовок формы.
 
 Необязательный атрибут. Любое значение будет переведено в текстовое.
+
+### Height
+
+Высота рабочей области формы (то есть кайма формы сюда не входит).
+
+Необязательный атрибут. Ожидается целочисленное значение.
+
+По умолчанию используется стандартное значение .NET.
+
+### Width
+
+Ширина рабочей области формы (то есть кайма формы сюда не входит).
+
+Необязательный атрибут. Ожидается целочисленное значение.
+
+По умолчанию используется стандартное значение .NET.
 
 ### FontStyle <a href="#font_style" id="font_style"></a>
 

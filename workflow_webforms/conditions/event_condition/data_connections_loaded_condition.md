@@ -1,43 +1,39 @@
 ---
 description: >-
-  Событийное условие; срабатывает, когда одно из загружающих соединений начало
-  загрузку.
+  Событийное условие; срабатывает каждый раз, когда все загружающие соединения
+  загружены.
 ---
 
-# DataConnectionsLoadingCondition
+# DataConnectionsLoadedCondition
 
-## Шаблон DataConnectionsLoadingCondition <a href="#template_data_connections_loading_condition" id="template_data_connections_loading_condition"></a>
+## Шаблон DataConnectionsLoadedCondition <a href="#template_data_connections_loaded_condition" id="template_data_connections_loaded_condition"></a>
 
 ```xml
-<Condition Name="" Type="DataConnectionsLoadingCondition" Assembly="Conditions">
+<Condition Name="" Type="DataConnectionsLoadedCondition" Assembly="Conditions">
   <!--Тэги, общие для всех условий-->
-  <!--Тэги, специфичные для DataConnectionsLoadingCondition-->
+  <!--Тэги, специфичные для DataConnectionsLoadedCondition-->
   <DataConnections>
     <DataConnection Name="" />
   </DataConnections>
 </Condition>
 ```
 
-## Описание DataConnectionsLoadingCondition <a href="#description_data_connections_loading_condition" id="description_data_connections_loading_condition"></a>
+## Описание DataConnectionsLoadedCondition <a href="#description_data_connections_loaded_condition" id="description_data_connections_loaded_condition"></a>
 
 ```xml
-<Condition Name="DataConnectionsLoadingConditionName" Type="DataConnectionsLoadingCondition" Assembly="Conditions">
+<Condition Name="DataConnectionsLoadedConditionName" Type="DataConnectionsLoadedCondition" Assembly="Conditions">
   <!--Тэги, общие для всех условий-->
-  <!--Тэги, специфичные для DataConnectionsLoadingCondition-->
+  <!--Тэги, специфичные для DataConnectionsLoadedCondition-->
 </Condition>
 ```
 
-{% hint style="info" %}
-В следующий раз условие готово к срабатыванию после того, как все соединения были загружены.
-{% endhint %}
-
-## Тэги, специфичные для DataConnectionsLoadingCondition <a href="#tags_data_connections_loading_condition" id="tags_data_connections_loading_condition"></a>
+## Тэги, специфичные для DataConnectionsLoadedCondition <a href="#tags_data_connections_loaded_condition" id="tags_data_connections_loaded_condition"></a>
 
 ### DataConnections <a href="#data_connections" id="data_connections"></a>
 
 Список загружающих [соединений с данными](../../dataconnections/).
 
-Обязательный тэг. Значение тэга `<DataConnections>`: список тэгов [`<DataConnection>`](dataconnectionsloadingcondition.md#data_connections_data_connection).
+Обязательный тэг. Значение тэга `<DataConnections>`: список тэгов [`<DataConnection>`](data_connections_loaded_condition.md#data_connections_data_connection).
 
 ```xml
 <DataConnections>

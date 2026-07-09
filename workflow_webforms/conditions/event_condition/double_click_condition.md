@@ -57,7 +57,7 @@ description: Событийное условие; срабатывает при 
 
 #### Атрибуты тэга `<Button>` <a href="#attributes_tag_button" id="attributes_tag_button"></a>
 
-<table data-header-hidden><thead><tr><th align="center"></th><th width="502.3333333333333"></th></tr></thead><tbody><tr><td align="center">Type</td><td><p>Тип нажатой кнопки.</p><p></p><p>Обязательный атрибут. Ожидается название одного из <a href="doubleclickcondition.md#mouse_button_types">типов кнопок мышки</a>.</p></td></tr></tbody></table>
+<table data-header-hidden><thead><tr><th align="center"></th><th width="502.3333333333333"></th></tr></thead><tbody><tr><td align="center">Type</td><td><p>Тип нажатой кнопки.</p><p></p><p>Обязательный атрибут. Ожидается название одного из <a href="double_click_condition.md#mouse_button_types">типов кнопок мышки</a>.</p></td></tr></tbody></table>
 
 #### Типы кнопок мышки <a href="#mouse_button_types" id="mouse_button_types"></a>
 
